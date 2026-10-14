@@ -1,0 +1,110 @@
+
+/* =========================================================
+   PAYSLIP ADMIN PAGE
+========================================================= */
+
+.payslip-admin-page {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  /* padding: 24px; */
+  color: #172033;
+  background: #f8fafc;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+.payslip-admin-page *,
+.payslip-admin-page *::before,
+.payslip-admin-page *::after {
+  box-sizing: border-box;
+}
+
+.payslip-admin-page__data-card {
+  width: 100%;
+  min-width: 0;
+  margin-top: 22px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 3%);
+}
+
+.payslip-admin-page__error {
+  padding: 13px 15px;
+  margin-bottom: 16px;
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.payslip-admin-page__preview-loading {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #334155;
+  background: rgb(248 250 252 / 82%);
+  font-size: 14px;
+  font-weight: 600;
+  backdrop-filter: blur(2px);
+}
+
+/* Table containment */
+
+.payslip-admin-page__data-card table {
+  max-width: 100%;
+}
+
+.payslip-admin-page__data-card input,
+.payslip-admin-page__data-card select,
+.payslip-admin-page__data-card button {
+  font-family: inherit;
+}
+
+.payslip-admin-page__data-card button {
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.payslip-admin-page__data-card button:focus-visible {
+  outline: 3px solid rgb(37 99 235 / 20%);
+  outline-offset: 2px;
+}
+
+.payslip-admin-page__data-card button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .payslip-admin-page {
+    padding: 20px;
+  }
+
+  .payslip-admin-page__data-card {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .payslip-admin-page {
+    padding: 12px;
+  }
+
+  .payslip-admin-page__data-card {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 11px;
+  }
+}

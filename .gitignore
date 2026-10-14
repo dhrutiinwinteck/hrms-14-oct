@@ -1,0 +1,9 @@
+
+# Python virtual environments
+Backend/FastApi/.env
+Frontend/React/.env
+Backend/FastApi/.venv/
+# Python virtual environments
+Backend/FastApi/env/
+Backend/FastApi/.venv/
+Frontend/React/node_modules/
